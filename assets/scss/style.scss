@@ -94,8 +94,8 @@ a {
   transition-timing-function: ease-out;
 
   &:hover {
-    color: $link-text;
-    text-shadow: 0 0 1px #fff;
+    color: $text;
+    text-shadow: 0 0 1px $theme;
   }
 }
 
@@ -329,6 +329,10 @@ p.img-404 {
     width: 180px;
     max-width: 100%;
     height: auto;
+
+    g {
+      color: $theme-darker;
+    }
   }
 }
 
@@ -350,7 +354,7 @@ p.img-404 {
     a {
       display: inline-block;
       border: 2px solid $text;
-      border-radius: 5px;
+      border-radius: 7px;
       padding: 5px;
       transition-property: color, border-color;
 
@@ -359,7 +363,7 @@ p.img-404 {
       }
 
       &:hover {
-        border-color: #fff;
+        border-color: $theme-darker;
       }
 
       svg {
